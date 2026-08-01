@@ -67,6 +67,6 @@ private · Aug 1
 
 ### Contact
 
-[tarunkr27@gmail.com](mailto:tarunkr27@gmail.com) · [LinkedIn](https://www.linkedin.com/in/REPLACE-ME)
+[tarunkr27@gmail.com](mailto:tarunkr27@gmail.com) · [LinkedIn](https://www.linkedin.com/in/tarunkr27/)
 
 Happy to walk through the design of any of the above, or screen-share the code.

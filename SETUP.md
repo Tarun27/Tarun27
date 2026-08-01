@@ -75,5 +75,7 @@ STATS_TOKEN=ghp_... GITHUB_LOGIN=Tarun27 python scripts/update_stats.py
 
 ## Before this goes public
 
-- Replace `REPLACE-ME` in the README footer with your LinkedIn handle.
-- Add GitHub descriptions to any repo you want described on the page.
+- Add GitHub descriptions to any repo you want described on the page. Without
+  one, a repo renders as a bare name and says nothing about the work.
+- Review `projects.hide` in `profile.yml` after each run. Anything pushed
+  recently is listed by name, private repos included.
