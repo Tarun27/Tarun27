@@ -16,7 +16,7 @@ settings:
   fallback_entries: 3
 
 projects:
-  - repo: report-lens
+  - repo: [report-lens, reportLens]
     name: ReportLens
     summary: RAG over Indian equity annual reports and concall transcripts, answering with page-level citations.
     decision: >-
@@ -26,7 +26,7 @@ projects:
     tags: [Python, FastAPI, PostgreSQL, pgvector]
     link: ""
 
-  - repo: system-design-lab
+  - repo: [system-design-lab, SDL]
     name: System Design Lab
     summary: Learning distributed systems by running them, under synthetic traffic profiles and injected failure.
     decision: >-
@@ -36,7 +36,7 @@ projects:
     tags: [Python, React, Docker, Cassandra, Redis]
     link: ""
 
-  - repo: mission-control
+  - repo: [mission-control, Jarvis]
     name: Mission Control
     summary: The daily-use surface over the launcher daemon; a live app grid, goals, trips and interviews.
     decision: >-
@@ -46,7 +46,7 @@ projects:
     tags: [FastAPI, React, PostgreSQL]
     link: ""
 
-  - repo: byte-design
+  - repo: [byte-design, ByteDesign]
     name: ByteDesign
     summary: System design concepts as an infinite vertical scroll feed, built for Android.
     decision: >-
@@ -77,7 +77,7 @@ projects:
     tags: [Python, Instaloader]
     link: ""
 
-  - repo: mini-rag
+  - repo: [mini-rag, Retriever]
     name: MiniRAG
     summary: A minimal chat-with-your-docs RAG implementation, written as a teaching artifact.
     decision: >-

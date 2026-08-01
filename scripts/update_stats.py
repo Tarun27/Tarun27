@@ -77,6 +77,7 @@ def graphql(token: str, query: str, variables: dict) -> dict:
 COUNTS_QUERY = """
 query($login: String!, $from: DateTime!, $to: DateTime!) {
   user(login: $login) {
+    createdAt
     all:     repositories(ownerAffiliations: OWNER, isFork: false) { totalCount }
     public:  repositories(ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC)  { totalCount }
     private: repositories(ownerAffiliations: OWNER, isFork: false, privacy: PRIVATE) { totalCount }
@@ -94,6 +95,16 @@ query($login: String!, $from: DateTime!, $to: DateTime!) {
     contributionsCollection(from: $from, to: $to) {
       totalCommitContributions
       restrictedContributionsCount
+    }
+  }
+}
+"""
+
+CALENDAR_QUERY = """
+query($login: String!, $from: DateTime!, $to: DateTime!) {
+  user(login: $login) {
+    contributionsCollection(from: $from, to: $to) {
+      contributionCalendar { totalContributions }
     }
   }
 }
@@ -134,6 +145,26 @@ def commits(collection: dict) -> int:
     )
 
 
+def all_time_contributions(token: str, login: str, created_at: str) -> tuple[int, int]:
+    """Total contributions since the account was created, and that start year.
+
+    contributionsCollection caps its window at one year, so this walks the
+    account year by year and sums. Cheap enough for a daily cron.
+    """
+    start = datetime.strptime(created_at, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+    now = datetime.now(timezone.utc)
+    total = 0
+    cursor = start
+    while cursor < now:
+        end = min(cursor + timedelta(days=365), now)
+        user = graphql(token, CALENDAR_QUERY, {
+            "login": login, "from": iso(cursor), "to": iso(end),
+        })
+        total += user["contributionsCollection"]["contributionCalendar"]["totalContributions"]
+        cursor = end
+    return total, start.year
+
+
 def fetch_repositories(token: str, login: str) -> list[dict]:
     repos: list[dict] = []
     cursor = None
@@ -158,7 +189,10 @@ def top_languages(repos: list[dict]) -> list[str]:
     return [name for name, _ in ranked[:TOP_LANGUAGES]]
 
 
-def render_snapshot(counts: dict, year: int, month: int, languages: list[str]) -> str:
+def render_snapshot(
+    counts: dict, year: int, month: int, languages: list[str],
+    all_time: int, since: int,
+) -> str:
     repos = counts["all"]["totalCount"]
     public = counts["public"]["totalCount"]
     private = counts["private"]["totalCount"]
@@ -166,6 +200,8 @@ def render_snapshot(counts: dict, year: int, month: int, languages: list[str]) -
         f"📦 {repos:,} repositories  ·  {public:,} public  ·  **{private:,} private**",
         "",
         f"✍️ {year:,} commits in the last year  ·  {month:,} in the last 30 days",
+        "",
+        f"📈 {all_time:,} contributions since {since}",
         "",
         f"🔧 {' · '.join(languages)}",
     ])
@@ -186,11 +222,34 @@ def render_projects(manifest: dict, repos: list[dict]) -> str:
     cutoff = datetime.now(timezone.utc) - timedelta(days=active_days)
 
     known = []
+    missing = []
+    matched_repos = set()
     for entry in manifest.get("projects", []):
-        last_push = pushed.get(str(entry["repo"]).lower())
-        if last_push is not None:
+        # `repo` may be a list: the display name and the actual repo name drift
+        # apart during a rename, and looking up only the canonical one silently
+        # drops the project. Every candidate gets tried.
+        candidates = entry["repo"]
+        if isinstance(candidates, str):
+            candidates = [candidates]
+        hits = [(pushed[c.lower()], c) for c in candidates if c.lower() in pushed]
+        if hits:
+            last_push, name = max(hits)
+            matched_repos.add(name.lower())
             known.append((last_push, entry))
+        else:
+            missing.append((entry["name"], candidates))
     known.sort(key=lambda pair: pair[0], reverse=True)
+
+    # Diagnostics. A project vanishing from the README because of a name typo
+    # should never be something you discover by reading the rendered page.
+    for name, candidates in missing:
+        print(f"warning: '{name}' matched no repository; tried {candidates}")
+    unlisted = [
+        (when, repo) for repo, when in pushed.items()
+        if when >= cutoff and repo not in matched_repos
+    ]
+    for when, repo in sorted(unlisted, reverse=True):
+        print(f"note: '{repo}' was pushed {when:%Y-%m-%d} but has no projects.yml entry")
 
     active = [pair for pair in known if pair[0] >= cutoff][:max_entries]
     if active:
@@ -288,10 +347,14 @@ def main() -> None:
     if not languages:
         fail("no languages resolved across any repository — refusing to write")
 
+    all_time, since = all_time_contributions(token, login, counts["createdAt"])
+    if all_time == 0:
+        fail("API reported 0 lifetime contributions — refusing to write")
+
     text = README.read_text(encoding="utf-8")
     updated = replace_block(
         text, "SNAPSHOT",
-        render_snapshot(counts, commits_year, commits_month, languages),
+        render_snapshot(counts, commits_year, commits_month, languages, all_time, since),
     )
     updated = replace_block(
         updated, "PROJECTS",

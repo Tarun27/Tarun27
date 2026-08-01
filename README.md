@@ -48,11 +48,6 @@ Most of what I build lives in private repositories, so the split is here to make
   <img alt="Contribution activity, last 31 days" src="https://github-readme-activity-graph.vercel.app/graph?username=Tarun27&days=31&area=true&hide_border=true&bg_color=FFFFFF&color=24292F&title_color=1F6FEB&line=1F6FEB&point=1F6FEB">
 </picture>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=Tarun27&theme=github-dark-blue&hide_border=true&date_format=M%20j%5B%2C%20Y%5D">
-  <img alt="Current, longest and total contribution streak" src="https://streak-stats.demolab.com?user=Tarun27&theme=default&hide_border=true&date_format=M%20j%5B%2C%20Y%5D">
-</picture>
-
 The contribution calendar further down this profile page includes private work, so it reads closer to the truth than the repository list above it does.
 
 ### Projects
