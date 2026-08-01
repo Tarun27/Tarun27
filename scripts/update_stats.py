@@ -63,9 +63,15 @@ def graphql(token: str, query: str, variables: dict) -> dict:
 
     if "errors" in body:
         fail(f"GraphQL errors: {json.dumps(body['errors'])}")
-    if not body.get("data", {}).get("user"):
-        fail("GraphQL response contained no user — check STATS_TOKEN and the login")
-    return body["data"]["user"]
+    # data can be present-but-null on a partial failure, so do not chain .get()
+    # off it — that crashes with an AttributeError instead of saying why.
+    user = (body.get("data") or {}).get("user")
+    if not user:
+        fail(
+            "GraphQL response contained no user. Check that STATS_TOKEN is a valid, "
+            f"unexpired token and that the login is right (got {variables.get('login')!r})."
+        )
+    return user
 
 
 COUNTS_QUERY = """
@@ -259,14 +265,26 @@ def main() -> None:
     # missing the repo scope reads as a real response with private repos at
     # zero, which is exactly the failure worth catching here.
     total = counts["all"]["totalCount"]
+    scope_hint = "STATS_TOKEN needs the `repo` scope (classic) to see private repositories."
     if total == 0:
-        fail("API reported 0 owned repositories — refusing to write")
+        fail(f"API reported 0 owned repositories — refusing to write. {scope_hint}")
+    if counts["private"]["totalCount"] == 0:
+        fail(
+            "API reported 0 private repositories, which is the signature of a token "
+            f"that cannot see them — refusing to write. {scope_hint}"
+        )
     if len(repos) != total:
-        fail(f"paginated {len(repos)} repositories but totalCount is {total} — refusing to write")
+        fail(
+            f"paginated {len(repos)} repositories but totalCount is {total} — "
+            f"refusing to write on a partial read. {scope_hint}"
+        )
     if counts["public"]["totalCount"] + counts["private"]["totalCount"] != total:
         fail("public + private does not equal the repository total — refusing to write")
     if commits_year == 0:
-        fail("API reported 0 commits in the last year — check the token scopes")
+        fail(
+            "API reported 0 commits in the last year — refusing to write. A classic "
+            "token with `read:user` is required; fine-grained tokens often return 0 here."
+        )
     if not languages:
         fail("no languages resolved across any repository — refusing to write")
 
