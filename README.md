@@ -34,7 +34,9 @@ Currently building retrieval systems over financial documents, and a lab for run
 <!-- SNAPSHOT:START -->
 📦 46 repositories  ·  21 public  ·  **25 private**
 
-✍️ 581 commits in the last year  ·  151 in the last 30 days
+✍️ 585 commits in the last year  ·  155 in the last 30 days
+
+📈 1,080 contributions since 2013
 
 🔧 Python · TypeScript · JavaScript · Java
 <!-- SNAPSHOT:END -->
@@ -46,23 +48,37 @@ The contribution calendar below includes private work, so it reads closer to the
 ### Projects
 
 <!-- PROJECTS:START -->
-Pushed to in the last 60 days.
+Repositories I have pushed to in the last 60 days, most recent first.
 
-**Local Apps Launcher** — Always-on daemon that starts and stops local apps on demand from a YAML registry.  
-Health-check polling gates the browser redirect, so a request never lands on a port that is listening but not ready, and an idle reaper stops apps to reclaim RAM. Registered with launchd to survive reboots.  
-`FastAPI` · `launchd` · `YAML` — _source private; happy to walk through the design or demo it_
+**[tarunxyz](https://github.com/Tarun27/tarunxyz)**  
+`Python` · public · Aug 1
 
-**System Design Lab** — Learning distributed systems by running them, under synthetic traffic profiles and injected failure.  
-Chaos injected through the Docker API and network conditions through Toxiproxy, with experiments defined in versioned YAML so a run is reproducible. Each one emits a labnote carrying measured p50/p95/p99 rather than a verdict.  
-`Python` · `React` · `Docker` · `Cassandra` · `Redis` — _source private; happy to walk through the design or demo it_
+**[Tarun27](https://github.com/Tarun27/Tarun27)**  
+`Python` · public · Aug 1
 
-**Doomscroll Vault** — Config-driven Instagram reel archiver built on Instaloader.  
-An atomic manifest index with per-item metadata sidecars, so an interrupted run leaves the archive consistent and the next sync resumes incrementally instead of re-downloading. Sessions are reused to stay inside rate limits.  
-`Python` · `Instaloader` — _source private; happy to walk through the design or demo it_
+**Jarvis**  
+`JavaScript` · private · Aug 1
 
-**ByteDesign** — System design concepts as an infinite vertical scroll feed, built for Android.  
-Offline-first on Room with timestamp-based sync, cards rendered client-side in Compose so the payload stays text, and an on-device weighted-scoring recommender that orders the feed without a round trip.  
-`Kotlin` · `Jetpack Compose` · `Room` — _source private; happy to walk through the design or demo it_
+**itr-helper**  
+private · Aug 1
+
+**Investment-Research-Assistant**  
+`Python` · private · Jul 28
+
+**local-apps-launcher**  
+`Python` · private · Jul 28
+
+**Tarun-portfolio**  
+`JavaScript` · private · Jul 26
+
+**job-hunter**  
+`Python` · private · Jul 26
+
+**Agricart**  
+`JavaScript` · private · Jul 26
+
+**sde-prep-app**  
+`TypeScript` · private · Jul 26
 <!-- PROJECTS:END -->
 
 ### Contact
