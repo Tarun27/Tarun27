@@ -16,4 +16,12 @@ projects:
   # Repositories never listed, even when recently pushed. Matched
   # case-insensitively. Use this for anything whose *name* you do not want on a
   # public page — scratch repos, client work, anything half-finished.
-  hide: []
+  hide:
+    # This repo and its duplicate. Listing the page's own plumbing as a project
+    # is noise.
+    - Tarun27
+    - tarunxyz
+    # These two say "actively job hunting and grinding interviews" to the exact
+    # audience this page is aimed at. Remove them if you disagree.
+    - job-hunter
+    - sde-prep-app

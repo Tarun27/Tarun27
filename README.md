@@ -5,29 +5,13 @@ Currently building retrieval systems over financial documents, and a lab for run
 
 ### Stack
 
-**Languages**
-![Java](https://img.shields.io/badge/Java-1F6FEB?style=flat-square&logo=openjdk&logoColor=white)
-![Python](https://img.shields.io/badge/Python-1F6FEB?style=flat-square&logo=python&logoColor=white)
-![Kotlin](https://img.shields.io/badge/Kotlin-1F6FEB?style=flat-square&logo=kotlin&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-1F6FEB?style=flat-square&logo=typescript&logoColor=white)
+**Languages** &nbsp; `Java` &nbsp;`Python` &nbsp;`Kotlin` &nbsp;`TypeScript`
 
-**Backend & UI**
-![Spring](https://img.shields.io/badge/Spring-246E9C?style=flat-square&logo=spring&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-246E9C?style=flat-square&logo=fastapi&logoColor=white)
-![React](https://img.shields.io/badge/React-246E9C?style=flat-square&logo=react&logoColor=white)
-![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-246E9C?style=flat-square&logo=jetpackcompose&logoColor=white)
+**Backend & UI** &nbsp; `Spring` &nbsp;`FastAPI` &nbsp;`React` &nbsp;`Jetpack Compose`
 
-**Data**
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-2A6B7C?style=flat-square&logo=postgresql&logoColor=white)
-![pgvector](https://img.shields.io/badge/pgvector-2A6B7C?style=flat-square&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-2A6B7C?style=flat-square&logo=redis&logoColor=white)
-![Cassandra](https://img.shields.io/badge/Cassandra-2A6B7C?style=flat-square&logo=apachecassandra&logoColor=white)
+**Data** &nbsp; `PostgreSQL` &nbsp;`pgvector` &nbsp;`Redis` &nbsp;`Cassandra`
 
-**Infra**
-![Docker](https://img.shields.io/badge/Docker-30556B?style=flat-square&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-30556B?style=flat-square&logo=githubactions&logoColor=white)
-![Toxiproxy](https://img.shields.io/badge/Toxiproxy-30556B?style=flat-square&logo=proxy&logoColor=white)
-![launchd](https://img.shields.io/badge/launchd-30556B?style=flat-square&logo=apple&logoColor=white)
+**Infra** &nbsp; `Docker` &nbsp;`GitHub Actions` &nbsp;`Toxiproxy` &nbsp;`launchd`
 
 ### Snapshot
 
