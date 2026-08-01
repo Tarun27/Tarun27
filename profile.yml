@@ -1,0 +1,19 @@
+# Settings for the generated blocks in README.md.
+#
+# There is no project copy here any more. The projects list is built from real
+# push activity, and each line's description is the repository's own GitHub
+# description — edit it on the repo and it appears here on the next run.
+
+projects:
+  # How far back counts as current work.
+  active_days: 60
+  # Cap on how many repositories are listed.
+  max_entries: 10
+  # If nothing was pushed inside the window, list this many of the most recent
+  # instead, so the section is never empty.
+  fallback_entries: 5
+
+  # Repositories never listed, even when recently pushed. Matched
+  # case-insensitively. Use this for anything whose *name* you do not want on a
+  # public page — scratch repos, client work, anything half-finished.
+  hide: []

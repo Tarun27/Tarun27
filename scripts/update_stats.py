@@ -26,7 +26,7 @@ import yaml
 API = "https://api.github.com/graphql"
 ROOT = Path(__file__).resolve().parent.parent
 README = ROOT / "README.md"
-MANIFEST = ROOT / "projects.yml"
+CONFIG = ROOT / "profile.yml"
 
 # Markup and config languages crowd out the ones that say something about the
 # work. Bytes of HTML are not a signal about what someone builds.
@@ -120,6 +120,8 @@ query($login: String!, $cursor: String) {
         pushedAt
         isPrivate
         url
+        description
+        primaryLanguage { name }
         languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
           edges { size node { name } }
         }
@@ -209,87 +211,64 @@ def render_snapshot(
     ])
 
 
-def render_projects(manifest: dict, repos: list[dict]) -> str:
-    settings = manifest.get("settings", {})
+def render_projects(config: dict, repos: list[dict]) -> str:
+    """List every repo pushed to inside the window, most recent first.
+
+    Nothing here is hand-curated. The one-line description is the repo's own
+    GitHub description, so it is edited in one place — on the repo — and shows
+    up here on the next run.
+    """
+    settings = config.get("projects", {})
     active_days = int(settings.get("active_days", 60))
-    max_entries = int(settings.get("max_entries", 5))
-    fallback_entries = int(settings.get("fallback_entries", 3))
+    max_entries = int(settings.get("max_entries", 10))
+    fallback_entries = int(settings.get("fallback_entries", 5))
+    hidden = {str(n).lower() for n in (settings.get("hide") or [])}
 
-    pushed = {
-        repo["name"].lower(): datetime.strptime(repo["pushedAt"], "%Y-%m-%dT%H:%M:%SZ")
-        .replace(tzinfo=timezone.utc)
-        for repo in repos
-        if repo.get("pushedAt")
-    }
-    by_name = {repo["name"].lower(): repo for repo in repos}
+    dated = []
+    for repo in repos:
+        if not repo.get("pushedAt") or repo["name"].lower() in hidden:
+            continue
+        when = datetime.strptime(repo["pushedAt"], "%Y-%m-%dT%H:%M:%SZ")
+        dated.append((when.replace(tzinfo=timezone.utc), repo))
+    dated.sort(key=lambda pair: pair[0], reverse=True)
+
     cutoff = datetime.now(timezone.utc) - timedelta(days=active_days)
-
-    known = []
-    missing = []
-    matched_repos = set()
-    for entry in manifest.get("projects", []):
-        # `repo` may be a list: the display name and the actual repo name drift
-        # apart during a rename, and looking up only the canonical one silently
-        # drops the project. Every candidate gets tried.
-        candidates = entry["repo"]
-        if isinstance(candidates, str):
-            candidates = [candidates]
-        hits = [(pushed[c.lower()], c) for c in candidates if c.lower() in pushed]
-        if hits:
-            last_push, name = max(hits)
-            matched_repos.add(name.lower())
-            known.append((last_push, {**entry, "_repo": by_name[name.lower()]}))
-        else:
-            missing.append((entry["name"], candidates))
-    known.sort(key=lambda pair: pair[0], reverse=True)
-
-    # Diagnostics. A project vanishing from the README because of a name typo
-    # should never be something you discover by reading the rendered page.
-    for name, candidates in missing:
-        print(f"warning: '{name}' matched no repository; tried {candidates}")
-    unlisted = [
-        (when, repo) for repo, when in pushed.items()
-        if when >= cutoff and repo not in matched_repos
-    ]
-    for when, repo in sorted(unlisted, reverse=True):
-        print(f"note: '{repo}' was pushed {when:%Y-%m-%d} but has no projects.yml entry")
-
-    active = [pair for pair in known if pair[0] >= cutoff][:max_entries]
+    active = [pair for pair in dated if pair[0] >= cutoff][:max_entries]
     if active:
         chosen = active
-        lead = f"Pushed to in the last {active_days} days."
+        lead = f"Repositories I have pushed to in the last {active_days} days, most recent first."
     else:
-        # Never ship an empty section because a couple of quiet months happened.
-        chosen = known[:fallback_entries]
+        # A couple of quiet months should not empty the section.
+        chosen = dated[:fallback_entries]
         lead = "Most recent work."
 
     if not chosen:
-        fail(
-            "no project in projects.yml matches an owned repository — "
-            "refusing to write an empty PROJECTS block"
-        )
+        fail("no repository to list — refusing to write an empty PROJECTS block")
 
-    lines = [f"{lead}", ""]
-    for _, entry in chosen:
-        tags = " · ".join(f"`{tag}`" for tag in entry.get("tags", []))
-        # Public repos get a link to the code; the private framing would be a
-        # lie on a repo anyone can already open.
-        repo = entry.get("_repo", {})
-        if repo.get("isPrivate", True):
-            closing = "_source private; happy to walk through the design or demo it_"
-        else:
-            closing = f"[source]({repo['url']})"
-        link = str(entry.get("link") or "").strip()
-        if link:
-            closing = f"[live]({link}) · {closing}"
-        summary = " ".join(str(entry["summary"]).split())
-        decision = " ".join(str(entry["decision"]).split())
-        lines.extend([
-            f"**{entry['name']}** — {summary}  ",
-            f"{decision}  ",
-            f"{tags} — {closing}",
-            "",
-        ])
+    lines = [lead, ""]
+    for when, repo in chosen:
+        name = repo["name"]
+        # Private repos cannot be linked, and saying so per line is the point of
+        # the page rather than an apology for it.
+        title = f"**{name}**" if repo["isPrivate"] else f"**[{name}]({repo['url']})**"
+        bits = [title]
+        description = (repo.get("description") or "").strip()
+        if description:
+            bits.append(f"— {description}")
+        meta = []
+        if repo.get("primaryLanguage"):
+            meta.append(f"`{repo['primaryLanguage']['name']}`")
+        meta.append("private" if repo["isPrivate"] else "public")
+        meta.append(f"{when:%b %-d}")
+        lines.append(f"{' '.join(bits)}  \n{' · '.join(meta)}")
+        lines.append("")
+
+    described = sum(1 for _, r in chosen if (r.get("description") or "").strip())
+    if described < len(chosen):
+        print(
+            f"note: {len(chosen) - described} of {len(chosen)} listed repos have no "
+            "GitHub description; they render as a bare name until you add one"
+        )
     return "\n".join(lines).rstrip()
 
 
@@ -367,7 +346,7 @@ def main() -> None:
     )
     updated = replace_block(
         updated, "PROJECTS",
-        render_projects(yaml.safe_load(MANIFEST.read_text(encoding="utf-8")), repos),
+        render_projects(yaml.safe_load(CONFIG.read_text(encoding="utf-8")) or {}, repos),
     )
 
     if updated == text:

@@ -6,7 +6,7 @@ keep it current.
 | File | Role |
 | --- | --- |
 | `README.md` | The profile. Two generated blocks, everything else hand-written. |
-| `projects.yml` | Curated copy for the projects block. The only file to edit routinely. |
+| `profile.yml` | Window, cap, and the hide list. Rarely needs touching. |
 | `scripts/update_stats.py` | Queries the GitHub GraphQL API and rewrites the two blocks. |
 | `.github/workflows/update-stats.yml` | Runs the script daily at 02:17 UTC and on demand. |
 
@@ -52,17 +52,19 @@ could ship as real ones.
 
 ## Keeping the projects block current
 
-The workflow renders a project only when it appears in `projects.yml` *and* its
-repo has been pushed to inside `settings.active_days` (60). Entries are ordered
-most-recent-first and capped at `max_entries`. Nothing you have not written copy
-for is ever named, so pushing to a private repo does not leak its name onto a
-public page.
+Nothing to maintain. The workflow lists every owned, non-fork repository pushed
+to inside `projects.active_days` (60), most recent first, capped at
+`max_entries`. Push to a repo and it appears; go quiet for two months and it
+drops off.
 
-To add a project, add an entry. To retire one, delete it — or just stop pushing
-to it and it ages out on its own.
+Each line's one-liner is **the repository's own GitHub description**. Set it on
+the repo itself — the About box, top right of the repo page — and it shows up
+here on the next run. A repo with no description renders as a bare name, and the
+workflow log says how many are in that state.
 
-If no repo has been pushed to inside the window, it falls back to the three most
-recent so the section is never empty.
+Private repositories are listed by name and marked `private`; public ones link
+to the source. To keep a repository's name off the page entirely, add it to
+`projects.hide` in `profile.yml`.
 
 ## Local run
 
@@ -74,4 +76,4 @@ STATS_TOKEN=ghp_... GITHUB_LOGIN=Tarun27 python scripts/update_stats.py
 ## Before this goes public
 
 - Replace `REPLACE-ME` in the README footer with your LinkedIn handle.
-- Add the Play Store URL to the `byte-design` entry in `projects.yml`.
+- Add GitHub descriptions to any repo you want described on the page.
