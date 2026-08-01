@@ -1,0 +1,47 @@
+name: Update profile stats
+
+on:
+  schedule:
+    # 02:17 UTC daily — off-peak, and off the hour so it is not queued behind
+    # every other cron job on GitHub.
+    - cron: "17 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-stats
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install --quiet pyyaml
+
+      - name: Render snapshot and projects
+        env:
+          # The default GITHUB_TOKEN cannot see private repositories, which is
+          # the entire point of this workflow. STATS_TOKEN is a PAT.
+          STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
+          GITHUB_LOGIN: ${{ github.repository_owner }}
+        run: python scripts/update_stats.py
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "README unchanged; nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: refresh profile stats"
+          git push

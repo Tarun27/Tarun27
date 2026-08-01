@@ -1,0 +1,88 @@
+# Curated copy for the PROJECTS block in README.md.
+#
+# The workflow renders an entry only if its `repo` exists under this account,
+# is not a fork, and has been pushed to within `active_days`. Entries are
+# ordered most-recently-pushed first and capped at `max_entries`.
+#
+# Nothing here renders unless you wrote it: a repo with no entry in this file
+# is never named in the README, which is what keeps private repo names off a
+# public page. Adding a project means adding it here.
+
+settings:
+  active_days: 60
+  max_entries: 5
+  # If no repo has been pushed in the window, fall back to this many of the
+  # most recent, so the section is never empty.
+  fallback_entries: 3
+
+projects:
+  - repo: report-lens
+    name: ReportLens
+    summary: RAG over Indian equity annual reports and concall transcripts, answering with page-level citations.
+    decision: >-
+      Hybrid retrieval — dense vectors and BM25 fused with reciprocal rank fusion,
+      then cross-encoder reranking over the merged head. Every index change is scored
+      against a golden-dataset eval harness before it ships.
+    tags: [Python, FastAPI, PostgreSQL, pgvector]
+    link: ""
+
+  - repo: system-design-lab
+    name: System Design Lab
+    summary: Learning distributed systems by running them, under synthetic traffic profiles and injected failure.
+    decision: >-
+      Chaos injected through the Docker API and network conditions through Toxiproxy,
+      with experiments defined in versioned YAML so a run is reproducible. Each one
+      emits a labnote carrying measured p50/p95/p99 rather than a verdict.
+    tags: [Python, React, Docker, Cassandra, Redis]
+    link: ""
+
+  - repo: mission-control
+    name: Mission Control
+    summary: The daily-use surface over the launcher daemon; a live app grid, goals, trips and interviews.
+    decision: >-
+      Goals are the primary tracker and carry attachable metrics, so progress is a
+      time series against a target rather than a checkbox. The app grid reads
+      daemon state live instead of polling each app directly.
+    tags: [FastAPI, React, PostgreSQL]
+    link: ""
+
+  - repo: byte-design
+    name: ByteDesign
+    summary: System design concepts as an infinite vertical scroll feed, built for Android.
+    decision: >-
+      Offline-first on Room with timestamp-based sync, cards rendered client-side in
+      Compose so the payload stays text, and an on-device weighted-scoring recommender
+      that orders the feed without a round trip.
+    tags: [Kotlin, Jetpack Compose, Room]
+    # Play Store URL goes here — the entry renders without it until then.
+    link: ""
+
+  - repo: local-apps-launcher
+    name: Local Apps Launcher
+    summary: Always-on daemon that starts and stops local apps on demand from a YAML registry.
+    decision: >-
+      Health-check polling gates the browser redirect, so a request never lands on a
+      port that is listening but not ready, and an idle reaper stops apps to reclaim
+      RAM. Registered with launchd to survive reboots.
+    tags: [FastAPI, launchd, YAML]
+    link: ""
+
+  - repo: doomscroll-vault
+    name: Doomscroll Vault
+    summary: Config-driven Instagram reel archiver built on Instaloader.
+    decision: >-
+      An atomic manifest index with per-item metadata sidecars, so an interrupted run
+      leaves the archive consistent and the next sync resumes incrementally instead of
+      re-downloading. Sessions are reused to stay inside rate limits.
+    tags: [Python, Instaloader]
+    link: ""
+
+  - repo: mini-rag
+    name: MiniRAG
+    summary: A minimal chat-with-your-docs RAG implementation, written as a teaching artifact.
+    decision: >-
+      Deliberately constrained to what one person can read end to end in a sitting —
+      chunking, embedding, retrieval and prompt assembly stay visible rather than
+      hidden behind a framework abstraction.
+    tags: [Python, sentence-transformers]
+    link: ""
