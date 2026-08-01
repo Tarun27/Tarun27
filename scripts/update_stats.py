@@ -118,6 +118,8 @@ query($login: String!, $cursor: String) {
       nodes {
         name
         pushedAt
+        isPrivate
+        url
         languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
           edges { size node { name } }
         }
@@ -219,6 +221,7 @@ def render_projects(manifest: dict, repos: list[dict]) -> str:
         for repo in repos
         if repo.get("pushedAt")
     }
+    by_name = {repo["name"].lower(): repo for repo in repos}
     cutoff = datetime.now(timezone.utc) - timedelta(days=active_days)
 
     known = []
@@ -235,7 +238,7 @@ def render_projects(manifest: dict, repos: list[dict]) -> str:
         if hits:
             last_push, name = max(hits)
             matched_repos.add(name.lower())
-            known.append((last_push, entry))
+            known.append((last_push, {**entry, "_repo": by_name[name.lower()]}))
         else:
             missing.append((entry["name"], candidates))
     known.sort(key=lambda pair: pair[0], reverse=True)
@@ -269,7 +272,13 @@ def render_projects(manifest: dict, repos: list[dict]) -> str:
     lines = [f"{lead}", ""]
     for _, entry in chosen:
         tags = " · ".join(f"`{tag}`" for tag in entry.get("tags", []))
-        closing = "_source private; happy to walk through the design or demo it_"
+        # Public repos get a link to the code; the private framing would be a
+        # lie on a repo anyone can already open.
+        repo = entry.get("_repo", {})
+        if repo.get("isPrivate", True):
+            closing = "_source private; happy to walk through the design or demo it_"
+        else:
+            closing = f"[source]({repo['url']})"
         link = str(entry.get("link") or "").strip()
         if link:
             closing = f"[live]({link}) · {closing}"

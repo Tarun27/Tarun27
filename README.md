@@ -41,14 +41,7 @@ Currently building retrieval systems over financial documents, and a lab for run
 
 Most of what I build lives in private repositories, so the split is here to make the page reflect the actual volume of work rather than the public slice of it.
 
-### Activity
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=Tarun27&days=31&area=true&hide_border=true&bg_color=0D1117&color=C9D1D9&title_color=58A6FF&line=58A6FF&point=58A6FF">
-  <img alt="Contribution activity, last 31 days" src="https://github-readme-activity-graph.vercel.app/graph?username=Tarun27&days=31&area=true&hide_border=true&bg_color=FFFFFF&color=24292F&title_color=1F6FEB&line=1F6FEB&point=1F6FEB">
-</picture>
-
-The contribution calendar further down this profile page includes private work, so it reads closer to the truth than the repository list above it does.
+The contribution calendar below includes private work, so it reads closer to the truth than the repository list does.
 
 ### Projects
 

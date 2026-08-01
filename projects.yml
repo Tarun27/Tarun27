@@ -16,6 +16,17 @@ settings:
   fallback_entries: 3
 
 projects:
+  - repo: discord-archiver
+    name: Discord Archiver
+    summary: Local-only web app that exports Discord message history into a shape you can run analytics on.
+    decision: >-
+      Discord exposes no message-count endpoint, so totals are estimated by
+      stratified sampling — strata equal in *time*, which keeps the mean unbiased
+      where sampling by message index would over-represent bursts. Sample count
+      doubles until relative standard error falls inside budget.
+    tags: [Python, FastAPI, React, WebSocket]
+    link: ""
+
   - repo: [report-lens, reportLens]
     name: ReportLens
     summary: RAG over Indian equity annual reports and concall transcripts, answering with page-level citations.
