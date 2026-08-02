@@ -18,9 +18,9 @@ Currently building retrieval systems over financial documents, and a lab for run
 <!-- SNAPSHOT:START -->
 📦 46 repositories  ·  21 public  ·  **25 private**
 
-✍️ 585 commits in the last year  ·  155 in the last 30 days
+✍️ 605 commits in the last year  ·  166 in the last 30 days
 
-📈 1,080 contributions since 2013
+📈 1,100 contributions since 2013
 
 🔧 Python · TypeScript · JavaScript · Java
 <!-- SNAPSHOT:END -->
@@ -34,17 +34,11 @@ The contribution calendar below includes private work, so it reads closer to the
 <!-- PROJECTS:START -->
 Repositories I have pushed to in the last 60 days, most recent first.
 
-**[tarunxyz](https://github.com/Tarun27/tarunxyz)**  
-`Python` · public · Aug 1
-
-**[Tarun27](https://github.com/Tarun27/Tarun27)**  
-`Python` · public · Aug 1
+**itr-helper**  
+`Python` · private · Aug 1
 
 **Jarvis**  
 `JavaScript` · private · Aug 1
-
-**itr-helper**  
-private · Aug 1
 
 **Investment-Research-Assistant**  
 `Python` · private · Jul 28
@@ -55,14 +49,20 @@ private · Aug 1
 **Tarun-portfolio**  
 `JavaScript` · private · Jul 26
 
-**job-hunter**  
-`Python` · private · Jul 26
-
 **Agricart**  
 `JavaScript` · private · Jul 26
 
-**sde-prep-app**  
-`TypeScript` · private · Jul 26
+**discord-archiver**  
+`Python` · private · Jul 25
+
+**system-design**  
+`HTML` · private · Jul 19
+
+**system-design-lab**  
+`TypeScript` · private · Jul 17
+
+**doomscroll-vault**  
+`Python` · private · Jul 16
 <!-- PROJECTS:END -->
 
 ### Contact
