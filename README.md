@@ -18,9 +18,9 @@ Currently building retrieval systems over financial documents, and a lab for run
 <!-- SNAPSHOT:START -->
 📦 46 repositories  ·  21 public  ·  **25 private**
 
-✍️ 612 commits in the last year  ·  139 in the last 30 days
+✍️ 618 commits in the last year  ·  143 in the last 30 days
 
-📈 1,107 contributions since 2013
+📈 1,113 contributions since 2013
 
 🔧 Python · TypeScript · JavaScript · Java
 <!-- SNAPSHOT:END -->
@@ -34,17 +34,17 @@ The contribution calendar below includes private work, so it reads closer to the
 <!-- PROJECTS:START -->
 Repositories I have pushed to in the last 60 days, most recent first.
 
-**local-apps-launcher**  
-`Python` · private · Aug 7
-
-**itr-helper**  
-`Python` · private · Aug 7
+**Investment-Research-Assistant**  
+`Python` · private · Aug 8
 
 **Jarvis**  
-`JavaScript` · private · Aug 7
+`JavaScript` · private · Aug 8
 
-**Investment-Research-Assistant**  
-`Python` · private · Jul 28
+**itr-helper**  
+`Python` · private · Aug 8
+
+**local-apps-launcher**  
+`Python` · private · Aug 7
 
 **Tarun-portfolio**  
 `JavaScript` · private · Jul 26
