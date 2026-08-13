@@ -16,11 +16,11 @@ Currently building retrieval systems over financial documents, and a lab for run
 ### Snapshot
 
 <!-- SNAPSHOT:START -->
-📦 46 repositories  ·  21 public  ·  **25 private**
+📦 47 repositories  ·  21 public  ·  **26 private**
 
-✍️ 629 commits in the last year  ·  134 in the last 30 days
+✍️ 634 commits in the last year  ·  133 in the last 30 days
 
-📈 1,124 contributions since 2013
+📈 1,130 contributions since 2013
 
 🔧 Python · TypeScript · JavaScript · Java
 <!-- SNAPSHOT:END -->
@@ -34,11 +34,14 @@ The contribution calendar below includes private work, so it reads closer to the
 <!-- PROJECTS:START -->
 Repositories I have pushed to in the last 60 days, most recent first.
 
+**Jarvis**  
+`JavaScript` · private · Aug 13
+
+**health-tracker**  
+private · Aug 12
+
 **Investment-Research-Assistant**  
 `Python` · private · Aug 11
-
-**Jarvis**  
-`JavaScript` · private · Aug 10
 
 **itr-helper**  
 `Python` · private · Aug 9
@@ -60,9 +63,6 @@ Repositories I have pushed to in the last 60 days, most recent first.
 
 **system-design-lab**  
 `TypeScript` · private · Jul 17
-
-**doomscroll-vault**  
-`Python` · private · Jul 16
 <!-- PROJECTS:END -->
 
 ### Contact
