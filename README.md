@@ -18,7 +18,7 @@ Currently building retrieval systems over financial documents, and a lab for run
 <!-- SNAPSHOT:START -->
 📦 46 repositories  ·  20 public  ·  **26 private**
 
-✍️ 731 commits in the last year  ·  120 in the last 30 days
+✍️ 731 commits in the last year  ·  115 in the last 30 days
 
 📈 1,236 contributions since 2013
 
