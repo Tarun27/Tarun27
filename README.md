@@ -20,7 +20,7 @@ Currently building retrieval systems over financial documents, and a lab for run
 
 ✍️ 737 commits in the last year  ·  99 in the last 30 days
 
-📈 1,245 contributions since 2013
+📈 1,246 contributions since 2013
 
 🔧 Python · TypeScript · JavaScript · Java
 <!-- SNAPSHOT:END -->
@@ -33,6 +33,9 @@ The contribution calendar below includes private work, so it reads closer to the
 
 <!-- PROJECTS:START -->
 Repositories I have pushed to in the last 60 days, most recent first.
+
+**discord-archiver**  
+`Python` · private · Sep 17
 
 **Jarvis**  
 `Python` · private · Sep 15
@@ -54,12 +57,6 @@ Repositories I have pushed to in the last 60 days, most recent first.
 
 **Agricart**  
 `JavaScript` · private · Jul 26
-
-**discord-archiver**  
-`Python` · private · Jul 25
-
-**system-design**  
-`HTML` · private · Jul 19
 <!-- PROJECTS:END -->
 
 ### Contact
