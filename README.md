@@ -16,11 +16,11 @@ Currently building retrieval systems over financial documents, and a lab for run
 ### Snapshot
 
 <!-- SNAPSHOT:START -->
-📦 46 repositories  ·  20 public  ·  **26 private**
+📦 47 repositories  ·  20 public  ·  **27 private**
 
-✍️ 738 commits in the last year  ·  98 in the last 30 days
+✍️ 760 commits in the last year  ·  119 in the last 30 days
 
-📈 1,248 contributions since 2013
+📈 1,272 contributions since 2013
 
 🔧 Python · TypeScript · JavaScript · Java
 <!-- SNAPSHOT:END -->
@@ -33,6 +33,12 @@ The contribution calendar below includes private work, so it reads closer to the
 
 <!-- PROJECTS:START -->
 Repositories I have pushed to in the last 60 days, most recent first.
+
+**system-design-notebook**  
+`TypeScript` · private · Sep 19
+
+**local-apps-launcher**  
+`Python` · private · Sep 19
 
 **discord-archiver**  
 `Python` · private · Sep 18
@@ -51,9 +57,6 @@ Repositories I have pushed to in the last 60 days, most recent first.
 
 **itr-helper**  
 `Python` · private · Aug 9
-
-**local-apps-launcher**  
-`Python` · private · Aug 7
 
 **Agricart**  
 `JavaScript` · private · Jul 26
