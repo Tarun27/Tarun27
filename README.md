@@ -18,9 +18,9 @@ Currently building retrieval systems over financial documents, and a lab for run
 <!-- SNAPSHOT:START -->
 📦 48 repositories  ·  20 public  ·  **28 private**
 
-✍️ 826 commits in the last year  ·  209 in the last 30 days
+✍️ 854 commits in the last year  ·  232 in the last 30 days
 
-📈 1,380 contributions since 2013
+📈 1,409 contributions since 2013
 
 🔧 Python · TypeScript · JavaScript · Java
 <!-- SNAPSHOT:END -->
@@ -37,8 +37,11 @@ Repositories I have pushed to in the last 60 days, most recent first.
 **mango**  
 `Python` · private · Oct 4
 
+**system-design-notebook**  
+`TypeScript` · private · Oct 4
+
 **Jarvis**  
-`Python` · private · Oct 2
+`Python` · private · Oct 4
 
 **doomscroll-vault**  
 `Python` · private · Oct 2
@@ -51,9 +54,6 @@ Repositories I have pushed to in the last 60 days, most recent first.
 
 **local-apps-launcher**  
 `Python` · private · Sep 25
-
-**system-design-notebook**  
-`TypeScript` · private · Sep 22
 
 **discord-archiver**  
 `Python` · private · Sep 18
