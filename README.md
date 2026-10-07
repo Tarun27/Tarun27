@@ -16,11 +16,11 @@ Currently building retrieval systems over financial documents, and a lab for run
 ### Snapshot
 
 <!-- SNAPSHOT:START -->
-📦 48 repositories  ·  20 public  ·  **28 private**
+📦 49 repositories  ·  20 public  ·  **29 private**
 
-✍️ 853 commits in the last year  ·  229 in the last 30 days
+✍️ 856 commits in the last year  ·  230 in the last 30 days
 
-📈 1,409 contributions since 2013
+📈 1,414 contributions since 2013
 
 🔧 Python · TypeScript · JavaScript · Java
 <!-- SNAPSHOT:END -->
@@ -35,7 +35,10 @@ The contribution calendar below includes private work, so it reads closer to the
 Repositories I have pushed to in the last 60 days, most recent first.
 
 **mango**  
-`Python` · private · Oct 4
+`Python` · private · Oct 6
+
+**dot-files**  
+`Lua` · private · Oct 6
 
 **system-design-notebook**  
 `TypeScript` · private · Oct 4
@@ -60,9 +63,6 @@ Repositories I have pushed to in the last 60 days, most recent first.
 
 **health-tracker**  
 `Python` · private · Sep 11
-
-**itr-helper**  
-`Python` · private · Aug 9
 <!-- PROJECTS:END -->
 
 ### Contact
