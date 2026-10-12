@@ -18,9 +18,9 @@ Currently building retrieval systems over financial documents, and a lab for run
 <!-- SNAPSHOT:START -->
 📦 49 repositories  ·  20 public  ·  **29 private**
 
-✍️ 885 commits in the last year  ·  201 in the last 30 days
+✍️ 909 commits in the last year  ·  217 in the last 30 days
 
-📈 1,446 contributions since 2013
+📈 1,470 contributions since 2013
 
 🔧 Python · TypeScript · JavaScript · Java
 <!-- SNAPSHOT:END -->
@@ -34,11 +34,14 @@ The contribution calendar below includes private work, so it reads closer to the
 <!-- PROJECTS:START -->
 Repositories I have pushed to in the last 60 days, most recent first.
 
+**jarvis**  
+`Python` · private · Oct 11
+
 **health-tracker**  
 `Python` · private · Oct 11
 
-**jarvis**  
-`Python` · private · Oct 11
+**resume-maker** — project to make resumes  
+`JavaScript` · private · Oct 11
 
 **report-lens**  
 `Python` · private · Oct 11
@@ -48,9 +51,6 @@ Repositories I have pushed to in the last 60 days, most recent first.
 
 **investment-research-assistant**  
 `Python` · private · Oct 10
-
-**resume-maker** — project to make resumes  
-`JavaScript` · private · Oct 10
 
 **system-design**  
 `HTML` · private · Oct 10
