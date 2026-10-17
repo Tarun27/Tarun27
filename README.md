@@ -18,9 +18,9 @@ Currently building retrieval systems over financial documents, and a lab for run
 <!-- SNAPSHOT:START -->
 📦 49 repositories  ·  20 public  ·  **29 private**
 
-✍️ 939 commits in the last year  ·  234 in the last 30 days
+✍️ 948 commits in the last year  ·  243 in the last 30 days
 
-📈 1,500 contributions since 2013
+📈 1,509 contributions since 2013
 
 🔧 Python · TypeScript · JavaScript · Java
 <!-- SNAPSHOT:END -->
@@ -34,6 +34,24 @@ The contribution calendar below includes private work, so it reads closer to the
 <!-- PROJECTS:START -->
 Repositories I have pushed to in the last 60 days, most recent first.
 
+**system-design-notebook**  
+`TypeScript` · private · Oct 17
+
+**system-design-lab**  
+`TypeScript` · private · Oct 17
+
+**agricart**  
+`JavaScript` · private · Oct 17
+
+**local-apps-launcher**  
+`Python` · private · Oct 17
+
+**report-lens**  
+`Python` · private · Oct 17
+
+**discord-archiver**  
+`Python` · private · Oct 17
+
 **resume-maker** — project to make resumes  
 `JavaScript` · private · Oct 16
 
@@ -45,24 +63,6 @@ Repositories I have pushed to in the last 60 days, most recent first.
 
 **doomscroll-vault**  
 `Python` · private · Oct 14
-
-**mango**  
-`Python` · private · Oct 13
-
-**health-tracker**  
-`Python` · private · Oct 13
-
-**report-lens**  
-`Python` · private · Oct 11
-
-**local-apps-launcher**  
-`Python` · private · Oct 10
-
-**system-design**  
-`HTML` · private · Oct 10
-
-**dot-files**  
-`Lua` · private · Oct 6
 <!-- PROJECTS:END -->
 
 ### Contact
