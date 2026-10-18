@@ -18,9 +18,9 @@ Currently building retrieval systems over financial documents, and a lab for run
 <!-- SNAPSHOT:START -->
 📦 49 repositories  ·  20 public  ·  **29 private**
 
-✍️ 948 commits in the last year  ·  243 in the last 30 days
+✍️ 971 commits in the last year  ·  265 in the last 30 days
 
-📈 1,509 contributions since 2013
+📈 1,532 contributions since 2013
 
 🔧 Python · TypeScript · JavaScript · Java
 <!-- SNAPSHOT:END -->
@@ -34,6 +34,27 @@ The contribution calendar below includes private work, so it reads closer to the
 <!-- PROJECTS:START -->
 Repositories I have pushed to in the last 60 days, most recent first.
 
+**investment-research-assistant**  
+`Python` · private · Oct 18
+
+**resume-maker** — project to make resumes  
+`JavaScript` · private · Oct 18
+
+**tarun-portfolio**  
+`JavaScript` · private · Oct 17
+
+**mango**  
+`Python` · private · Oct 17
+
+**doomscroll-vault**  
+`Python` · private · Oct 17
+
+**local-apps-launcher**  
+`Python` · private · Oct 17
+
+**jarvis**  
+`Python` · private · Oct 17
+
 **system-design-notebook**  
 `TypeScript` · private · Oct 17
 
@@ -42,27 +63,6 @@ Repositories I have pushed to in the last 60 days, most recent first.
 
 **agricart**  
 `JavaScript` · private · Oct 17
-
-**local-apps-launcher**  
-`Python` · private · Oct 17
-
-**report-lens**  
-`Python` · private · Oct 17
-
-**discord-archiver**  
-`Python` · private · Oct 17
-
-**resume-maker** — project to make resumes  
-`JavaScript` · private · Oct 16
-
-**jarvis**  
-`Python` · private · Oct 16
-
-**investment-research-assistant**  
-`Python` · private · Oct 16
-
-**doomscroll-vault**  
-`Python` · private · Oct 14
 <!-- PROJECTS:END -->
 
 ### Contact
