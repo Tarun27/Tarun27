@@ -16,11 +16,11 @@ Currently building retrieval systems over financial documents, and a lab for run
 ### Snapshot
 
 <!-- SNAPSHOT:START -->
-📦 49 repositories  ·  20 public  ·  **29 private**
+📦 51 repositories  ·  21 public  ·  **30 private**
 
-✍️ 971 commits in the last year  ·  265 in the last 30 days
+✍️ 1,004 commits in the last year  ·  297 in the last 30 days
 
-📈 1,532 contributions since 2013
+📈 1,578 contributions since 2013
 
 🔧 Python · TypeScript · JavaScript · Java
 <!-- SNAPSHOT:END -->
@@ -37,31 +37,31 @@ Repositories I have pushed to in the last 60 days, most recent first.
 **investment-research-assistant**  
 `Python` · private · Oct 18
 
+**report-lens**  
+`Python` · private · Oct 18
+
+**jarvis**  
+`Python` · private · Oct 18
+
 **resume-maker** — project to make resumes  
 `JavaScript` · private · Oct 18
 
-**tarun-portfolio**  
-`JavaScript` · private · Oct 17
-
 **mango**  
-`Python` · private · Oct 17
+`Python` · private · Oct 18
 
-**doomscroll-vault**  
-`Python` · private · Oct 17
+**[tarun-common](https://github.com/Tarun27/tarun-common)** — Small helpers shared by my apps, so each lives in one place  
+`Python` · public · Oct 18
+
+**health-tracker**  
+`Python` · private · Oct 18
 
 **local-apps-launcher**  
-`Python` · private · Oct 17
+`Python` · private · Oct 18
 
-**jarvis**  
-`Python` · private · Oct 17
+**transcriber** — One local Whisper for every project: speech-to-text over HTTP on localhost  
+`Python` · private · Oct 18
 
-**system-design-notebook**  
-`TypeScript` · private · Oct 17
-
-**system-design-lab**  
-`TypeScript` · private · Oct 17
-
-**agricart**  
+**tarun-portfolio**  
 `JavaScript` · private · Oct 17
 <!-- PROJECTS:END -->
 
