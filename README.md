@@ -16,11 +16,11 @@ Currently building retrieval systems over financial documents, and a lab for run
 ### Snapshot
 
 <!-- SNAPSHOT:START -->
-📦 51 repositories  ·  21 public  ·  **30 private**
+📦 52 repositories  ·  21 public  ·  **31 private**
 
-✍️ 1,004 commits in the last year  ·  297 in the last 30 days
+✍️ 1,023 commits in the last year  ·  315 in the last 30 days
 
-📈 1,578 contributions since 2013
+📈 1,599 contributions since 2013
 
 🔧 Python · TypeScript · JavaScript · Java
 <!-- SNAPSHOT:END -->
@@ -34,35 +34,35 @@ The contribution calendar below includes private work, so it reads closer to the
 <!-- PROJECTS:START -->
 Repositories I have pushed to in the last 60 days, most recent first.
 
-**investment-research-assistant**  
-`Python` · private · Oct 18
-
-**report-lens**  
-`Python` · private · Oct 18
-
-**jarvis**  
-`Python` · private · Oct 18
-
-**resume-maker** — project to make resumes  
-`JavaScript` · private · Oct 18
-
-**mango**  
-`Python` · private · Oct 18
+**transcriber** — One local Whisper for every project: speech-to-text over HTTP on localhost  
+`Python` · private · Oct 19
 
 **[tarun-common](https://github.com/Tarun27/tarun-common)** — Small helpers shared by my apps, so each lives in one place  
-`Python` · public · Oct 18
+`Python` · public · Oct 19
+
+**shared-stack** — Map of what my apps share, who uses it, and why  
+`Python` · private · Oct 19
+
+**mango**  
+`Python` · private · Oct 19
+
+**jarvis**  
+`Python` · private · Oct 19
+
+**resume-maker** — project to make resumes  
+`JavaScript` · private · Oct 19
+
+**itr-helper**  
+`Python` · private · Oct 19
+
+**investment-research-assistant**  
+`Python` · private · Oct 19
 
 **health-tracker**  
-`Python` · private · Oct 18
+`Python` · private · Oct 19
 
-**local-apps-launcher**  
-`Python` · private · Oct 18
-
-**transcriber** — One local Whisper for every project: speech-to-text over HTTP on localhost  
-`Python` · private · Oct 18
-
-**tarun-portfolio**  
-`JavaScript` · private · Oct 17
+**report-lens**  
+`Python` · private · Oct 19
 <!-- PROJECTS:END -->
 
 ### Contact
