@@ -18,9 +18,9 @@ Currently building retrieval systems over financial documents, and a lab for run
 <!-- SNAPSHOT:START -->
 📦 53 repositories  ·  21 public  ·  **32 private**
 
-✍️ 1,056 commits in the last year  ·  320 in the last 30 days
+✍️ 1,075 commits in the last year  ·  339 in the last 30 days
 
-📈 1,635 contributions since 2013
+📈 1,656 contributions since 2013
 
 🔧 Python · TypeScript · JavaScript · Java
 <!-- SNAPSHOT:END -->
@@ -34,11 +34,23 @@ The contribution calendar below includes private work, so it reads closer to the
 <!-- PROJECTS:START -->
 Repositories I have pushed to in the last 60 days, most recent first.
 
+**jarvis**  
+`Python` · private · Oct 25
+
+**investment-research-assistant**  
+`Python` · private · Oct 24
+
+**report-lens**  
+`Python` · private · Oct 24
+
+**shared-stack** — Map of what my apps share, who uses it, and why  
+`Python` · private · Oct 24
+
+**health-tracker**  
+`Python` · private · Oct 24
+
 **council** — Personal MCP server: decision frameworks as executable tools  
 `Python` · private · Oct 23
-
-**jarvis**  
-`Python` · private · Oct 22
 
 **local-apps-launcher**  
 `Python` · private · Oct 22
@@ -51,18 +63,6 @@ Repositories I have pushed to in the last 60 days, most recent first.
 
 **[tarun-common](https://github.com/Tarun27/tarun-common)** — Small helpers shared by my apps, so each lives in one place  
 `Python` · public · Oct 21
-
-**system-design-lab**  
-`TypeScript` · private · Oct 21
-
-**report-lens**  
-`Python` · private · Oct 21
-
-**discord-archiver**  
-`Python` · private · Oct 21
-
-**transcriber** — One local Whisper for every project: speech-to-text over HTTP on localhost  
-`Python` · private · Oct 19
 <!-- PROJECTS:END -->
 
 ### Contact
