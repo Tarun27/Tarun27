@@ -16,11 +16,11 @@ Currently building retrieval systems over financial documents, and a lab for run
 ### Snapshot
 
 <!-- SNAPSHOT:START -->
-📦 53 repositories  ·  21 public  ·  **32 private**
+📦 54 repositories  ·  21 public  ·  **33 private**
 
-✍️ 1,075 commits in the last year  ·  339 in the last 30 days
+✍️ 1,103 commits in the last year  ·  365 in the last 30 days
 
-📈 1,656 contributions since 2013
+📈 1,685 contributions since 2013
 
 🔧 Python · TypeScript · JavaScript · Java
 <!-- SNAPSHOT:END -->
@@ -33,6 +33,9 @@ The contribution calendar below includes private work, so it reads closer to the
 
 <!-- PROJECTS:START -->
 Repositories I have pushed to in the last 60 days, most recent first.
+
+**flat-engine** — Code-first 3D engine for flats and rooms, driven by a typed JSON model, with an MCP server  
+`TypeScript` · private · Oct 25
 
 **jarvis**  
 `Python` · private · Oct 25
@@ -60,9 +63,6 @@ Repositories I have pushed to in the last 60 days, most recent first.
 
 **resume-maker** — project to make resumes  
 `JavaScript` · private · Oct 21
-
-**[tarun-common](https://github.com/Tarun27/tarun-common)** — Small helpers shared by my apps, so each lives in one place  
-`Python` · public · Oct 21
 <!-- PROJECTS:END -->
 
 ### Contact
