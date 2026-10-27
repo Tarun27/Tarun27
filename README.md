@@ -18,9 +18,9 @@ Currently building retrieval systems over financial documents, and a lab for run
 <!-- SNAPSHOT:START -->
 📦 54 repositories  ·  21 public  ·  **33 private**
 
-✍️ 1,103 commits in the last year  ·  365 in the last 30 days
+✍️ 1,104 commits in the last year  ·  331 in the last 30 days
 
-📈 1,685 contributions since 2013
+📈 1,686 contributions since 2013
 
 🔧 Python · TypeScript · JavaScript · Java
 <!-- SNAPSHOT:END -->
@@ -34,11 +34,11 @@ The contribution calendar below includes private work, so it reads closer to the
 <!-- PROJECTS:START -->
 Repositories I have pushed to in the last 60 days, most recent first.
 
+**jarvis**  
+`Python` · private · Oct 26
+
 **flat-engine** — Code-first 3D engine for flats and rooms, driven by a typed JSON model, with an MCP server  
 `TypeScript` · private · Oct 25
-
-**jarvis**  
-`Python` · private · Oct 25
 
 **investment-research-assistant**  
 `Python` · private · Oct 24
