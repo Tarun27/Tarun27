@@ -16,11 +16,11 @@ Currently building retrieval systems over financial documents, and a lab for run
 ### Snapshot
 
 <!-- SNAPSHOT:START -->
-📦 54 repositories  ·  21 public  ·  **33 private**
+📦 56 repositories  ·  21 public  ·  **35 private**
 
-✍️ 1,112 commits in the last year  ·  324 in the last 30 days
+✍️ 1,157 commits in the last year  ·  368 in the last 30 days
 
-📈 1,694 contributions since 2013
+📈 1,741 contributions since 2013
 
 🔧 Python · TypeScript · JavaScript · Java
 <!-- SNAPSHOT:END -->
@@ -34,22 +34,28 @@ The contribution calendar below includes private work, so it reads closer to the
 <!-- PROJECTS:START -->
 Repositories I have pushed to in the last 60 days, most recent first.
 
-**jarvis**  
-`Python` · private · Oct 30
+**mapverse** — Open-world game built from real OpenStreetMap data, starting with HSR Layout, Bengaluru  
+`HTML` · private · Nov 1
+
+**flat-engine** — Code-first 3D engine for flats and rooms, driven by a typed JSON model, with an MCP server  
+`TypeScript` · private · Nov 1
+
+**local-apps-launcher**  
+`Python` · private · Oct 31
+
+**work-atlas** — Track the year at work by moving cards, not writing logs  
+`TypeScript` · private · Oct 31
 
 **shared-stack** — Map of what my apps share, who uses it, and why  
-`Python` · private · Oct 29
+`Python` · private · Oct 31
+
+**jarvis**  
+`Python` · private · Oct 31
 
 **investment-research-assistant**  
 `Python` · private · Oct 29
 
-**flat-engine** — Code-first 3D engine for flats and rooms, driven by a typed JSON model, with an MCP server  
-`TypeScript` · private · Oct 27
-
 **report-lens**  
-`Python` · private · Oct 27
-
-**local-apps-launcher**  
 `Python` · private · Oct 27
 
 **health-tracker**  
@@ -57,12 +63,6 @@ Repositories I have pushed to in the last 60 days, most recent first.
 
 **council** — Personal MCP server: decision frameworks as executable tools  
 `Python` · private · Oct 23
-
-**mango**  
-`Python` · private · Oct 22
-
-**resume-maker** — project to make resumes  
-`JavaScript` · private · Oct 21
 <!-- PROJECTS:END -->
 
 ### Contact
