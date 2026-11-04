@@ -16,11 +16,11 @@ Currently building retrieval systems over financial documents, and a lab for run
 ### Snapshot
 
 <!-- SNAPSHOT:START -->
-📦 56 repositories  ·  21 public  ·  **35 private**
+📦 57 repositories  ·  21 public  ·  **36 private**
 
-✍️ 1,202 commits in the last year  ·  390 in the last 30 days
+✍️ 1,218 commits in the last year  ·  377 in the last 30 days
 
-📈 1,786 contributions since 2013
+📈 1,803 contributions since 2013
 
 🔧 Python · TypeScript · JavaScript · Java
 <!-- SNAPSHOT:END -->
@@ -35,13 +35,25 @@ The contribution calendar below includes private work, so it reads closer to the
 Repositories I have pushed to in the last 60 days, most recent first.
 
 **mapverse** — Open-world game built from real OpenStreetMap data, starting with HSR Layout, Bengaluru  
-`JavaScript` · private · Nov 2
+`JavaScript` · private · Nov 4
+
+**jarvis**  
+`Python` · private · Nov 4
+
+**local-apps-launcher**  
+`Python` · private · Nov 4
+
+**mapverse-unreal** — Miami open-world game in Unreal Engine 5 (C++), built from OpenStreetMap data  
+`C++` · private · Nov 3
+
+**investment-research-assistant**  
+`Python` · private · Nov 3
+
+**report-lens**  
+`Python` · private · Nov 3
 
 **flat-engine** — Code-first 3D engine for flats and rooms, driven by a typed JSON model, with an MCP server  
 `TypeScript` · private · Nov 1
-
-**local-apps-launcher**  
-`Python` · private · Oct 31
 
 **work-atlas** — Track the year at work by moving cards, not writing logs  
 `TypeScript` · private · Oct 31
@@ -49,20 +61,8 @@ Repositories I have pushed to in the last 60 days, most recent first.
 **shared-stack** — Map of what my apps share, who uses it, and why  
 `Python` · private · Oct 31
 
-**jarvis**  
-`Python` · private · Oct 31
-
-**investment-research-assistant**  
-`Python` · private · Oct 29
-
-**report-lens**  
-`Python` · private · Oct 27
-
 **health-tracker**  
 `Python` · private · Oct 24
-
-**council** — Personal MCP server: decision frameworks as executable tools  
-`Python` · private · Oct 23
 <!-- PROJECTS:END -->
 
 ### Contact
