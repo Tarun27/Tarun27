@@ -16,13 +16,13 @@ Currently building retrieval systems over financial documents, and a lab for run
 ### Snapshot
 
 <!-- SNAPSHOT:START -->
-📦 57 repositories  ·  21 public  ·  **36 private**
+📦 58 repositories  ·  21 public  ·  **37 private**
 
-✍️ 1,226 commits in the last year  ·  375 in the last 30 days
+✍️ 1,262 commits in the last year  ·  409 in the last 30 days
 
-📈 1,811 contributions since 2013
+📈 1,849 contributions since 2013
 
-🔧 Python · TypeScript · JavaScript · Java
+🔧 Python · JavaScript · TypeScript · Java
 <!-- SNAPSHOT:END -->
 
 Most of what I build lives in private repositories, so the split is here to make the page reflect the actual volume of work rather than the public slice of it.
@@ -33,6 +33,9 @@ The contribution calendar below includes private work, so it reads closer to the
 
 <!-- PROJECTS:START -->
 Repositories I have pushed to in the last 60 days, most recent first.
+
+**mapverse-deployed** — Mapverse public edition: the open-world game without the super-admin features (deployable)  
+`JavaScript` · private · Nov 6
 
 **mapverse** — Open-world game built from real OpenStreetMap data, starting with HSR Layout, Bengaluru  
 `JavaScript` · private · Nov 6
@@ -60,9 +63,6 @@ Repositories I have pushed to in the last 60 days, most recent first.
 
 **shared-stack** — Map of what my apps share, who uses it, and why  
 `Python` · private · Oct 31
-
-**health-tracker**  
-`Python` · private · Oct 24
 <!-- PROJECTS:END -->
 
 ### Contact
