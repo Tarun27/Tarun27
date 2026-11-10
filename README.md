@@ -18,9 +18,9 @@ Currently building retrieval systems over financial documents, and a lab for run
 <!-- SNAPSHOT:START -->
 📦 58 repositories  ·  21 public  ·  **37 private**
 
-✍️ 1,311 commits in the last year  ·  456 in the last 30 days
+✍️ 1,321 commits in the last year  ·  449 in the last 30 days
 
-📈 1,898 contributions since 2013
+📈 1,909 contributions since 2013
 
 🔧 Python · JavaScript · TypeScript · Java
 <!-- SNAPSHOT:END -->
@@ -35,10 +35,13 @@ The contribution calendar below includes private work, so it reads closer to the
 Repositories I have pushed to in the last 60 days, most recent first.
 
 **mapverse-deployed** — Mapverse public edition: the open-world game without the super-admin features (deployable)  
-`JavaScript` · private · Nov 8
+`JavaScript` · private · Nov 9
 
 **mango**  
-`Python` · private · Nov 8
+`Python` · private · Nov 9
+
+**work-atlas** — Track the year at work by moving cards, not writing logs  
+`TypeScript` · private · Nov 9
 
 **investment-research-assistant**  
 `Python` · private · Nov 8
@@ -60,9 +63,6 @@ Repositories I have pushed to in the last 60 days, most recent first.
 
 **flat-engine** — Code-first 3D engine for flats and rooms, driven by a typed JSON model, with an MCP server  
 `TypeScript` · private · Nov 1
-
-**work-atlas** — Track the year at work by moving cards, not writing logs  
-`TypeScript` · private · Oct 31
 <!-- PROJECTS:END -->
 
 ### Contact
