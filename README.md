@@ -18,9 +18,9 @@ Currently building retrieval systems over financial documents, and a lab for run
 <!-- SNAPSHOT:START -->
 📦 58 repositories  ·  21 public  ·  **37 private**
 
-✍️ 1,336 commits in the last year  ·  429 in the last 30 days
+✍️ 1,340 commits in the last year  ·  432 in the last 30 days
 
-📈 1,927 contributions since 2013
+📈 1,931 contributions since 2013
 
 🔧 Python · JavaScript · TypeScript · Java
 <!-- SNAPSHOT:END -->
@@ -35,16 +35,16 @@ The contribution calendar below includes private work, so it reads closer to the
 Repositories I have pushed to in the last 60 days, most recent first.
 
 **shared-stack** — Map of what my apps share, who uses it, and why  
-`Shell` · private · Nov 10
+`Shell` · private · Nov 12
+
+**investment-research-assistant**  
+`Python` · private · Nov 11
+
+**mapverse-deployed** — Mapverse public edition: the open-world game without the super-admin features (deployable)  
+`JavaScript` · private · Nov 11
 
 **jarvis**  
 `Python` · private · Nov 10
-
-**investment-research-assistant**  
-`Python` · private · Nov 10
-
-**mapverse-deployed** — Mapverse public edition: the open-world game without the super-admin features (deployable)  
-`JavaScript` · private · Nov 10
 
 **work-atlas** — Track the year at work by moving cards, not writing logs  
 `TypeScript` · private · Nov 10
