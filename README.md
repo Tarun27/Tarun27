@@ -16,11 +16,11 @@ Currently building retrieval systems over financial documents, and a lab for run
 ### Snapshot
 
 <!-- SNAPSHOT:START -->
-📦 58 repositories  ·  21 public  ·  **37 private**
+📦 59 repositories  ·  21 public  ·  **38 private**
 
-✍️ 1,354 commits in the last year  ·  423 in the last 30 days
+✍️ 1,373 commits in the last year  ·  441 in the last 30 days
 
-📈 1,950 contributions since 2013
+📈 1,975 contributions since 2013
 
 🔧 Python · JavaScript · TypeScript · Java
 <!-- SNAPSHOT:END -->
@@ -34,17 +34,26 @@ The contribution calendar below includes private work, so it reads closer to the
 <!-- PROJECTS:START -->
 Repositories I have pushed to in the last 60 days, most recent first.
 
-**investment-research-assistant**  
-`Python` · private · Nov 13
-
-**work-atlas** — Track the year at work by moving cards, not writing logs  
-`Python` · private · Nov 12
+**dev-team**  
+`Python` · private · Nov 14
 
 **jarvis**  
-`Python` · private · Nov 12
+`Python` · private · Nov 14
+
+**discord-archiver**  
+`Python` · private · Nov 14
 
 **shared-stack** — Map of what my apps share, who uses it, and why  
-`Shell` · private · Nov 12
+`Shell` · private · Nov 14
+
+**work-atlas** — Track the year at work by moving cards, not writing logs  
+`TypeScript` · private · Nov 14
+
+**flat-engine** — Code-first 3D engine for flats and rooms, driven by a typed JSON model, with an MCP server  
+`TypeScript` · private · Nov 14
+
+**investment-research-assistant**  
+`Python` · private · Nov 13
 
 **mapverse-deployed** — Mapverse public edition: the open-world game without the super-admin features (deployable)  
 `JavaScript` · private · Nov 11
@@ -54,15 +63,6 @@ Repositories I have pushed to in the last 60 days, most recent first.
 
 **mapverse** — Open-world game built from real OpenStreetMap data, starting with HSR Layout, Bengaluru  
 `JavaScript` · private · Nov 7
-
-**local-apps-launcher**  
-`Python` · private · Nov 4
-
-**mapverse-unreal** — Miami open-world game in Unreal Engine 5 (C++), built from OpenStreetMap data  
-`C++` · private · Nov 3
-
-**report-lens**  
-`Python` · private · Nov 3
 <!-- PROJECTS:END -->
 
 ### Contact
