@@ -16,11 +16,11 @@ Currently building retrieval systems over financial documents, and a lab for run
 ### Snapshot
 
 <!-- SNAPSHOT:START -->
-📦 59 repositories  ·  21 public  ·  **38 private**
+📦 61 repositories  ·  21 public  ·  **40 private**
 
-✍️ 1,377 commits in the last year  ·  438 in the last 30 days
+✍️ 1,393 commits in the last year  ·  435 in the last 30 days
 
-📈 1,979 contributions since 2013
+📈 2,007 contributions since 2013
 
 🔧 Python · JavaScript · TypeScript · Java
 <!-- SNAPSHOT:END -->
@@ -34,8 +34,26 @@ The contribution calendar below includes private work, so it reads closer to the
 <!-- PROJECTS:START -->
 Repositories I have pushed to in the last 60 days, most recent first.
 
+**board-service**  
+`Python` · private · Nov 17
+
+**local-apps-launcher**  
+`Python` · private · Nov 17
+
+**tarun-company**  
+`Python` · private · Nov 17
+
+**dev-team**  
+`Python` · private · Nov 17
+
 **jarvis**  
-`Python` · private · Nov 15
+`Python` · private · Nov 16
+
+**discord-archiver**  
+`Python` · private · Nov 16
+
+**doomscroll-vault**  
+`Python` · private · Nov 16
 
 **work-atlas** — Track the year at work by moving cards, not writing logs  
 `TypeScript` · private · Nov 15
@@ -43,26 +61,8 @@ Repositories I have pushed to in the last 60 days, most recent first.
 **shared-stack** — Map of what my apps share, who uses it, and why  
 `Shell` · private · Nov 15
 
-**dev-team**  
-`Python` · private · Nov 15
-
-**discord-archiver**  
-`Python` · private · Nov 14
-
 **flat-engine** — Code-first 3D engine for flats and rooms, driven by a typed JSON model, with an MCP server  
 `TypeScript` · private · Nov 14
-
-**investment-research-assistant**  
-`Python` · private · Nov 13
-
-**mapverse-deployed** — Mapverse public edition: the open-world game without the super-admin features (deployable)  
-`JavaScript` · private · Nov 11
-
-**mango**  
-`Python` · private · Nov 10
-
-**mapverse** — Open-world game built from real OpenStreetMap data, starting with HSR Layout, Bengaluru  
-`JavaScript` · private · Nov 7
 <!-- PROJECTS:END -->
 
 ### Contact
