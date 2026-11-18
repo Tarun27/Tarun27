@@ -18,11 +18,11 @@ Currently building retrieval systems over financial documents, and a lab for run
 <!-- SNAPSHOT:START -->
 📦 61 repositories  ·  21 public  ·  **40 private**
 
-✍️ 1,393 commits in the last year  ·  435 in the last 30 days
+✍️ 1,410 commits in the last year  ·  406 in the last 30 days
 
-📈 2,007 contributions since 2013
+📈 2,024 contributions since 2013
 
-🔧 Python · JavaScript · TypeScript · Java
+🔧 Python · TypeScript · JavaScript · Java
 <!-- SNAPSHOT:END -->
 
 Most of what I build lives in private repositories, so the split is here to make the page reflect the actual volume of work rather than the public slice of it.
@@ -34,16 +34,19 @@ The contribution calendar below includes private work, so it reads closer to the
 <!-- PROJECTS:START -->
 Repositories I have pushed to in the last 60 days, most recent first.
 
-**board-service**  
+**tarun-company**  
+`Python` · private · Nov 18
+
+**shared-stack** — Map of what my apps share, who uses it, and why  
+`Shell` · private · Nov 18
+
+**dev-team**  
 `Python` · private · Nov 17
 
 **local-apps-launcher**  
 `Python` · private · Nov 17
 
-**tarun-company**  
-`Python` · private · Nov 17
-
-**dev-team**  
+**board-service**  
 `Python` · private · Nov 17
 
 **jarvis**  
@@ -57,9 +60,6 @@ Repositories I have pushed to in the last 60 days, most recent first.
 
 **work-atlas** — Track the year at work by moving cards, not writing logs  
 `TypeScript` · private · Nov 15
-
-**shared-stack** — Map of what my apps share, who uses it, and why  
-`Shell` · private · Nov 15
 
 **flat-engine** — Code-first 3D engine for flats and rooms, driven by a typed JSON model, with an MCP server  
 `TypeScript` · private · Nov 14
