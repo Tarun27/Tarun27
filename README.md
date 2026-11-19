@@ -18,9 +18,9 @@ Currently building retrieval systems over financial documents, and a lab for run
 <!-- SNAPSHOT:START -->
 📦 61 repositories  ·  21 public  ·  **40 private**
 
-✍️ 1,410 commits in the last year  ·  406 in the last 30 days
+✍️ 1,424 commits in the last year  ·  418 in the last 30 days
 
-📈 2,024 contributions since 2013
+📈 2,038 contributions since 2013
 
 🔧 Python · TypeScript · JavaScript · Java
 <!-- SNAPSHOT:END -->
@@ -34,14 +34,23 @@ The contribution calendar below includes private work, so it reads closer to the
 <!-- PROJECTS:START -->
 Repositories I have pushed to in the last 60 days, most recent first.
 
-**tarun-company**  
+**mango**  
 `Python` · private · Nov 18
 
 **shared-stack** — Map of what my apps share, who uses it, and why  
-`Shell` · private · Nov 18
+`Python` · private · Nov 18
 
-**dev-team**  
-`Python` · private · Nov 17
+**tarun-company**  
+`Python` · private · Nov 18
+
+**software-factory**  
+`Python` · private · Nov 18
+
+**work-atlas** — Track the year at work by moving cards, not writing logs  
+`TypeScript` · private · Nov 18
+
+**jarvis**  
+`Python` · private · Nov 18
 
 **local-apps-launcher**  
 `Python` · private · Nov 17
@@ -49,20 +58,11 @@ Repositories I have pushed to in the last 60 days, most recent first.
 **board-service**  
 `Python` · private · Nov 17
 
-**jarvis**  
-`Python` · private · Nov 16
-
 **discord-archiver**  
 `Python` · private · Nov 16
 
 **doomscroll-vault**  
 `Python` · private · Nov 16
-
-**work-atlas** — Track the year at work by moving cards, not writing logs  
-`TypeScript` · private · Nov 15
-
-**flat-engine** — Code-first 3D engine for flats and rooms, driven by a typed JSON model, with an MCP server  
-`TypeScript` · private · Nov 14
 <!-- PROJECTS:END -->
 
 ### Contact
