@@ -18,9 +18,9 @@ Currently building retrieval systems over financial documents, and a lab for run
 <!-- SNAPSHOT:START -->
 📦 61 repositories  ·  21 public  ·  **40 private**
 
-✍️ 1,424 commits in the last year  ·  418 in the last 30 days
+✍️ 1,437 commits in the last year  ·  414 in the last 30 days
 
-📈 2,038 contributions since 2013
+📈 2,062 contributions since 2013
 
 🔧 Python · TypeScript · JavaScript · Java
 <!-- SNAPSHOT:END -->
@@ -34,16 +34,22 @@ The contribution calendar below includes private work, so it reads closer to the
 <!-- PROJECTS:START -->
 Repositories I have pushed to in the last 60 days, most recent first.
 
-**mango**  
-`Python` · private · Nov 18
-
-**shared-stack** — Map of what my apps share, who uses it, and why  
-`Python` · private · Nov 18
-
 **tarun-company**  
-`Python` · private · Nov 18
+`Python` · private · Nov 20
 
 **software-factory**  
+`Python` · private · Nov 20
+
+**shared-stack** — Map of what my apps share, who uses it, and why  
+`Python` · private · Nov 20
+
+**health-tracker**  
+`Python` · private · Nov 19
+
+**resume-maker** — project to make resumes  
+`JavaScript` · private · Nov 19
+
+**mango**  
 `Python` · private · Nov 18
 
 **work-atlas** — Track the year at work by moving cards, not writing logs  
@@ -57,12 +63,6 @@ Repositories I have pushed to in the last 60 days, most recent first.
 
 **board-service**  
 `Python` · private · Nov 17
-
-**discord-archiver**  
-`Python` · private · Nov 16
-
-**doomscroll-vault**  
-`Python` · private · Nov 16
 <!-- PROJECTS:END -->
 
 ### Contact
