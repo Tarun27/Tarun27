@@ -18,9 +18,9 @@ Currently building retrieval systems over financial documents, and a lab for run
 <!-- SNAPSHOT:START -->
 📦 61 repositories  ·  21 public  ·  **40 private**
 
-✍️ 1,437 commits in the last year  ·  414 in the last 30 days
+✍️ 1,443 commits in the last year  ·  412 in the last 30 days
 
-📈 2,062 contributions since 2013
+📈 2,078 contributions since 2013
 
 🔧 Python · TypeScript · JavaScript · Java
 <!-- SNAPSHOT:END -->
@@ -34,10 +34,19 @@ The contribution calendar below includes private work, so it reads closer to the
 <!-- PROJECTS:START -->
 Repositories I have pushed to in the last 60 days, most recent first.
 
-**tarun-company**  
-`Python` · private · Nov 20
-
 **software-factory**  
+`Python` · private · Nov 21
+
+**jarvis**  
+`Python` · private · Nov 21
+
+**local-apps-launcher**  
+`Python` · private · Nov 21
+
+**system-design-notebook**  
+`TypeScript` · private · Nov 21
+
+**tarun-company**  
 `Python` · private · Nov 20
 
 **shared-stack** — Map of what my apps share, who uses it, and why  
@@ -54,15 +63,6 @@ Repositories I have pushed to in the last 60 days, most recent first.
 
 **work-atlas** — Track the year at work by moving cards, not writing logs  
 `TypeScript` · private · Nov 18
-
-**jarvis**  
-`Python` · private · Nov 18
-
-**local-apps-launcher**  
-`Python` · private · Nov 17
-
-**board-service**  
-`Python` · private · Nov 17
 <!-- PROJECTS:END -->
 
 ### Contact
