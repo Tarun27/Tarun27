@@ -18,9 +18,9 @@ Currently building retrieval systems over financial documents, and a lab for run
 <!-- SNAPSHOT:START -->
 📦 61 repositories  ·  21 public  ·  **40 private**
 
-✍️ 1,443 commits in the last year  ·  412 in the last 30 days
+✍️ 1,645 commits in the last year  ·  590 in the last 30 days
 
-📈 2,078 contributions since 2013
+📈 2,326 contributions since 2013
 
 🔧 Python · TypeScript · JavaScript · Java
 <!-- SNAPSHOT:END -->
@@ -34,35 +34,35 @@ The contribution calendar below includes private work, so it reads closer to the
 <!-- PROJECTS:START -->
 Repositories I have pushed to in the last 60 days, most recent first.
 
+**mapverse-deployed** — Mapverse public edition: the open-world game without the super-admin features (deployable)  
+`JavaScript` · private · Nov 22
+
+**mapverse** — Open-world game built from real OpenStreetMap data, starting with HSR Layout, Bengaluru  
+`JavaScript` · private · Nov 22
+
 **software-factory**  
-`Python` · private · Nov 21
+`Python` · private · Nov 22
+
+**investment-research-assistant**  
+`Python` · private · Nov 22
 
 **jarvis**  
-`Python` · private · Nov 21
+`Python` · private · Nov 22
 
-**local-apps-launcher**  
-`Python` · private · Nov 21
+**tarun-company**  
+`Python` · private · Nov 22
+
+**shared-stack** — Map of what my apps share, who uses it, and why  
+`Python` · private · Nov 22
 
 **system-design-notebook**  
 `TypeScript` · private · Nov 21
 
-**tarun-company**  
-`Python` · private · Nov 20
-
-**shared-stack** — Map of what my apps share, who uses it, and why  
-`Python` · private · Nov 20
-
-**health-tracker**  
-`Python` · private · Nov 19
-
 **resume-maker** — project to make resumes  
-`JavaScript` · private · Nov 19
+`JavaScript` · private · Nov 21
 
-**mango**  
-`Python` · private · Nov 18
-
-**work-atlas** — Track the year at work by moving cards, not writing logs  
-`TypeScript` · private · Nov 18
+**flat-engine** — Code-first 3D engine for flats and rooms, driven by a typed JSON model, with an MCP server  
+`TypeScript` · private · Nov 21
 <!-- PROJECTS:END -->
 
 ### Contact
