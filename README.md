@@ -18,11 +18,11 @@ Currently building retrieval systems over financial documents, and a lab for run
 <!-- SNAPSHOT:START -->
 📦 61 repositories  ·  21 public  ·  **40 private**
 
-✍️ 1,645 commits in the last year  ·  590 in the last 30 days
+✍️ 1,698 commits in the last year  ·  642 in the last 30 days
 
-📈 2,326 contributions since 2013
+📈 2,393 contributions since 2013
 
-🔧 Python · TypeScript · JavaScript · Java
+🔧 Python · JavaScript · TypeScript · Java
 <!-- SNAPSHOT:END -->
 
 Most of what I build lives in private repositories, so the split is here to make the page reflect the actual volume of work rather than the public slice of it.
@@ -35,24 +35,24 @@ The contribution calendar below includes private work, so it reads closer to the
 Repositories I have pushed to in the last 60 days, most recent first.
 
 **mapverse-deployed** — Mapverse public edition: the open-world game without the super-admin features (deployable)  
-`JavaScript` · private · Nov 22
-
-**mapverse** — Open-world game built from real OpenStreetMap data, starting with HSR Layout, Bengaluru  
-`JavaScript` · private · Nov 22
+`JavaScript` · private · Nov 23
 
 **software-factory**  
-`Python` · private · Nov 22
+`Python` · private · Nov 23
+
+**jarvis**  
+`Python` · private · Nov 23
+
+**mapverse** — Open-world game built from real OpenStreetMap data, starting with HSR Layout, Bengaluru  
+`JavaScript` · private · Nov 23
+
+**shared-stack** — Map of what my apps share, who uses it, and why  
+`Python` · private · Nov 23
 
 **investment-research-assistant**  
 `Python` · private · Nov 22
 
-**jarvis**  
-`Python` · private · Nov 22
-
 **tarun-company**  
-`Python` · private · Nov 22
-
-**shared-stack** — Map of what my apps share, who uses it, and why  
 `Python` · private · Nov 22
 
 **system-design-notebook**  
