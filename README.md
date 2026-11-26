@@ -18,9 +18,9 @@ Currently building retrieval systems over financial documents, and a lab for run
 <!-- SNAPSHOT:START -->
 📦 61 repositories  ·  21 public  ·  **40 private**
 
-✍️ 1,761 commits in the last year  ·  658 in the last 30 days
+✍️ 1,787 commits in the last year  ·  683 in the last 30 days
 
-📈 2,479 contributions since 2013
+📈 2,514 contributions since 2013
 
 🔧 Python · JavaScript · TypeScript · Java
 <!-- SNAPSHOT:END -->
@@ -35,10 +35,13 @@ The contribution calendar below includes private work, so it reads closer to the
 Repositories I have pushed to in the last 60 days, most recent first.
 
 **software-factory**  
-`Python` · private · Nov 25
+`Python` · private · Nov 26
 
 **jarvis**  
-`Python` · private · Nov 25
+`Python` · private · Nov 26
+
+**investment-research-assistant**  
+`Python` · private · Nov 26
 
 **mapverse-deployed** — Mapverse public edition: the open-world game without the super-admin features (deployable)  
 `JavaScript` · private · Nov 25
@@ -46,23 +49,20 @@ Repositories I have pushed to in the last 60 days, most recent first.
 **mapverse** — Open-world game built from real OpenStreetMap data, starting with HSR Layout, Bengaluru  
 `JavaScript` · private · Nov 25
 
-**shared-stack** — Map of what my apps share, who uses it, and why  
-`Python` · private · Nov 23
-
-**investment-research-assistant**  
-`Python` · private · Nov 22
+**doomscroll-vault**  
+`Python` · private · Nov 25
 
 **tarun-company**  
-`Python` · private · Nov 22
+`Python` · private · Nov 25
+
+**shared-stack** — Map of what my apps share, who uses it, and why  
+`Python` · private · Nov 23
 
 **system-design-notebook**  
 `TypeScript` · private · Nov 21
 
 **resume-maker** — project to make resumes  
 `JavaScript` · private · Nov 21
-
-**flat-engine** — Code-first 3D engine for flats and rooms, driven by a typed JSON model, with an MCP server  
-`TypeScript` · private · Nov 21
 <!-- PROJECTS:END -->
 
 ### Contact
