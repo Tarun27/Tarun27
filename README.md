@@ -18,9 +18,9 @@ Currently building retrieval systems over financial documents, and a lab for run
 <!-- SNAPSHOT:START -->
 📦 61 repositories  ·  21 public  ·  **40 private**
 
-✍️ 1,796 commits in the last year  ·  690 in the last 30 days
+✍️ 1,799 commits in the last year  ·  692 in the last 30 days
 
-📈 2,528 contributions since 2013
+📈 2,531 contributions since 2013
 
 🔧 Python · JavaScript · TypeScript · Java
 <!-- SNAPSHOT:END -->
@@ -34,11 +34,11 @@ The contribution calendar below includes private work, so it reads closer to the
 <!-- PROJECTS:START -->
 Repositories I have pushed to in the last 60 days, most recent first.
 
+**system-design-notebook**  
+`TypeScript` · private · Nov 27
+
 **software-factory**  
 `Python` · private · Nov 27
-
-**system-design-notebook**  
-`TypeScript` · private · Nov 26
 
 **jarvis**  
 `Python` · private · Nov 26
